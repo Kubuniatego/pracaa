@@ -95,7 +95,7 @@ button {
 <body>
 
 <div class="container">
-    <h1>Will you be my Valentine? 💖</h1>
+    <h1>Dagmara, will you be my Valentine? 💖</h1>
     <div class="buttons">
         <button id="yes">Tak 💘</button>
         <button id="no">Nie</button>
@@ -104,37 +104,4 @@ button {
 </div>
 
 <script>
-const noBtn = document.getElementById("no");
-const yesBtn = document.getElementById("yes");
-const response = document.getElementById("response");
-
-noBtn.addEventListener("mouseover", () => {
-    const x = Math.random() * (window.innerWidth - 100);
-    const y = Math.random() * (window.innerHeight - 50);
-    noBtn.style.left = x + "px";
-    noBtn.style.top = y + "px";
-});
-
-yesBtn.addEventListener("click", () => {
-    response.innerHTML = '<div class="love-message">Yaaay 💕 You just made me the happiest person alive!</div>';
-    createHearts();
-});
-
-function createHearts() {
-    for (let i = 0; i < 40; i++) {
-        let heart = document.createElement("div");
-        heart.classList.add("heart");
-        heart.innerHTML = "💖";
-        heart.style.left = Math.random() * 100 + "vw";
-        heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
-        document.body.appendChild(heart);
-
-        setTimeout(() => {
-            heart.remove();
-        }, 6000);
-    }
-}
-</script>
-
-</body>
-</html>
+cons
